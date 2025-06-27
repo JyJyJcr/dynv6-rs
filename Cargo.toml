@@ -1,0 +1,15 @@
+[package]
+name = "dynv6-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = { version = "0.12.15", features = ["json"] }
+serde = { version = "1.0.219", features = ["derive"] }
+chrono = { version = "0.4.40", features = ["serde"] }
+serde_json = { version = "1.0.140"}
+typed_id = { version = "0.1.0", features = ["serde"] }
+anyhow = "1.0.98"
+[dev-dependencies]
+tokio = { version="1.44.2", features = ["macros", "rt-multi-thread", "signal", "fs"] }
+getrandom = "0.2.15"
